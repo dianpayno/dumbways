@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact me</title>
+    
+     <!--font-family  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
     <!-- link css -->
     <link rel="stylesheet" href="./css/navbar.css">
@@ -36,22 +41,68 @@
 
     <div class="container">
 
-            <div class="form-container">
-                <form>
-                    <div>
-                        <label for="name">Name</label>
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Masukan nama..">
-                    </div>
+        
+        <div>
+            <h2>GET IN TOUCH 📝</h2>
+        </div>
 
-                    <div>
-                        <label for="name">Name</label>
-                    </div>
-                    <div>
-                        <input type="text" placeholder="Masukan nama..">
-                    </div>
-                </form>
+            <div class="form-container">
+                <div>
+                    <form>
+                        <div>
+                            <label for="name">Name</label>
+                        </div>
+                        <div>
+                            <input type="text" id="name" required>
+                        </div>
+    
+                        <div>
+                            <label for="email">Email</label>
+                        </div>
+                        <div>
+                            <input type="email"  id="email" required >
+                        </div>
+    
+                        <div>
+                            <label for="phone">Phone Number</label>
+                        </div>
+                        <div>
+                            <input type="number"  id="phone" required>
+                        </div>
+                        <div>
+                            <label for="country">Country</label>
+                        </div>
+                        <div>
+                            <select id="country" required>
+                                <option value="Australia">Australia</option>
+                                <option value="Australia">China</option>
+                                <option value="UK">United Kingdom</option>
+                                <option value="US">United States</option>
+                                <option value="Germany">Germany</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Singapore">Singapore</option>
+                                <option value="Australia">Others</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="comment">Your Message</label>
+                        </div>
+                        <div>
+                            <textarea id="comment" rows="6" cols="50">
+
+                            </textarea>
+
+                            
+                        </div>
+    
+                        <div class="submit-button">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+                </div>
+                
+                
             </div>
 
     </div>
