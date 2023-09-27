@@ -67,17 +67,28 @@
                             <label for="phone">Phone Number</label>
                         </div>
                         <div>
-                            <input type="number"  id="phone" required>
+                            <input type="text"  id="phone" required>
                         </div>
                         <div>
-                            <label for="country">Country</label>
+                            <label for="subject">Subject</label>
                         </div>
                         <div>
+                            <select id="subject" required>
+                                <option hidden></option>
+                                <option value="Lets Talk">Lets Talk</option>
+                                <option value="Hiring">Hiring</option>
+                            </select>
+                        </div>
+                        <div>
+                            <div>
+                                <label for="country">Country</label>
+                            </div>
                             <select id="country" required>
+                                <option hidden></option>
                                 <option value="Australia">Australia</option>
-                                <option value="Australia">China</option>
-                                <option value="UK">United Kingdom</option>
-                                <option value="US">United States</option>
+                                <option value="China">China</option>
+                                <option value="United Kingdom">United Kingdom</option>
+                                <option value="Unite States">United States</option>
                                 <option value="Germany">Germany</option>
                                 <option value="Indonesia">Indonesia</option>
                                 <option value="Singapore">Singapore</option>
@@ -89,7 +100,7 @@
                             <label for="comment">Your Message</label>
                         </div>
                         <div>
-                            <textarea id="comment" rows="6" cols="50">
+                            <textarea id="message" rows="4">
 
                             </textarea>
 
@@ -97,7 +108,7 @@
                         </div>
     
                         <div class="submit-button">
-                            <button>Submit</button>
+                            <button class="submit-button" >Submit</button>
                         </div>
                     </form>
                 </div>
@@ -106,6 +117,7 @@
             </div>
 
     </div>
-    
+<script src="./script/contact-form.js"></script>   
+
 </body>
 </html>

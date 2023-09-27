@@ -23,7 +23,8 @@ body{
 
 .form-container{
     display: flex;
-    justify-content: center;
+    width: 30%;
+    justify-content:center;
     background-color:white;
     margin-top: 15px;
     padding: 33px 7px;
@@ -32,9 +33,10 @@ body{
     font-weight:400;
     border-radius: 10px;
     box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+
 }
 form input,select {
-    width: 100%;
+    width: 270px;
     border: none;
     padding: 7px 13px;
     font-size: 14px;
@@ -42,23 +44,21 @@ form input,select {
     margin-bottom: 7px;
     outline: 1px solid #fe4e30;
 }
-
-
 
 form textarea{
-    width: 100%;
-    resize: none;
-    border-radius: 4px;
-    padding: 7px 13px;
-    font-size: 14px;
-    font-family: roboto;
+   width: 270px;
     border: none;
+    padding: 7px 7px;
+    font-size: 14px;
+    border-radius: 4px;
     margin-bottom: 7px;
     outline: 1px solid #fe4e30;
-    
+    resize: none;
+    font-family: roboto;
+    font-size: 14px;
 }
 
-input:focus, select:focus, textarea:focus{
+input:focus, select:focus {
     outline: 1px solid black;
 }
 
@@ -87,18 +87,7 @@ button:hover{
    
 }
 
-@media screen and ( max-width : 1280px) {
 
-    .form-container{
-        width: 37%;
-    }
-
-    input {
-        width: 100%;
-    } 
-    
-    
-}
 
 @media screen and  ( max-width : 1024px) {
 
