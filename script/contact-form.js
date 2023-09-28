@@ -1,6 +1,6 @@
 
 // membuat agar form pas di submit bisa kirim email
-
+// Coba pakai addEventlistener instead of masukin fungsi dihtml nya
  
  let submit = document.querySelector(".submit-button");
 submit.addEventListener('click',() =>{
@@ -44,7 +44,7 @@ function submitForm (){
     let emailReciever = "dianpayno@gmail.com";
 
     let a = document.createElement("a");
-    a.href=`mailto:${emailReciever}?subject= ${subject} &body=Hi dian, My name is ${name} from ${country}, Here is my email ${email} and my phone number ${phone}, ${message}`;
+    a.href=`mailto:${emailReciever}?subject= ${subject} &body=Hi dian, My name is ${name} from ${country}, Here is my email ${email} and my phone number ${phone}, would you mind to contact me back. ${message}`;
      a.click();
     //  ini cara kalo pake gmail
     // .a.href=`https://mail.google.com/mail/?view=cm&fs=1&to=${emailReciever}&su=${subject}&body=Halo dian, My name is ${name} from ${country}, ${message}.
